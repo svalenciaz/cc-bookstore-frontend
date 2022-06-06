@@ -1,10 +1,10 @@
 version: "3.1"
 services:
   client:
-    restart: always
     stdin_open: true
     build:
       dockerfile: Dockerfile
+      context: .
     ports:
       - "80:80"
     volumes:
